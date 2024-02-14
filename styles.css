@@ -35,8 +35,7 @@ main {
 	box-shadow: 0px 0px 4px gray;
 	margin: 8px;
 	padding: 8px;
-	min-width: 300px;
-	min-height: 400px;
+	width: 175px;
 }
 .filtres h3 {
 	text-align: center;
@@ -45,24 +44,45 @@ main {
 .fiches {
 	flex: 1;
 	margin: 8px;
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 4px;
-}
-.fiches article {
-	border: 1px solid black;
 	padding: 4px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: baseline;
+	gap : 2px;
+
 }
-.fiches article img {
+.fiches img {
+	max-width: 200px;
+}
+
+
+.fiches div{
+	border: solid black 1px;
+	padding: 4px;
+	max-width: 200px;
+}
+
+.fiche div img{
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 200px;
 }
-.fiches article p {
+
+.fiche div p {
 	margin-top: 4px;
 	margin-bottom: 4px;
+	text-align: justify;
 }
-.fiches article h2 {
+
+
+
+section[class=fiches] div{
+	border: 1px black solid
+}
+
+#affichRang{
+	display:block;
 	text-align: center;
-}
+}	
